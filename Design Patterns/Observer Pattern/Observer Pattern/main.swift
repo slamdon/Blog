@@ -18,9 +18,15 @@ let fireStation = StoneFireStation()
 let hospital = StoneFireStation()
 
 let bakery = StoneBakery()
-bakery.addObservers(observers: school,fireStation,hospital)
+bakery.addObservers(observers: school, fireStation, hospital)
 bakery.sendNotifications(item: "French bread")
 
 print("----- remove fireStation -----")
 bakery.removeObserver(observer: fireStation)
 bakery.sendNotifications(item: "baguette")
+
+
+
+var numbers = [1,2,3,4,5,6]
+var newNumbers = numbers.filter{ $0 == 2 }
+print(newNumbers)

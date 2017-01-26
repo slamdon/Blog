@@ -15,6 +15,7 @@ protocol Observer:class {
 protocol Subject {
     func addObservers(observers:Observer...)
     func removeObserver(observer:Observer)
+    func sendNotifications(item:String)
 }
 
 class SubjectBase: Subject {
